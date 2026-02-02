@@ -1,5 +1,5 @@
-🎙️ AI-Generated Voice Detection API (Multi-Language)
-Overview
+## 🎙️ AI-Generated Voice Detection API (Multi-Language)
+## Overview
 
 This project implements a RESTful API that analyzes voice samples and classifies them as either AI-generated or Human-generated. The system is designed with a strong focus on multilingual support, explainability, and real-world deployability, addressing the growing misuse of synthetic voices in fraud, impersonation, and misinformation.
 
@@ -17,7 +17,7 @@ Telugu
 
 The solution follows a feature-based machine learning approach combined with explainable audio signal analysis to ensure transparency and stability.
 
-Problem Statement
+## Problem Statement
 
 Advances in text-to-speech (TTS) and voice cloning technologies have made it increasingly difficult to distinguish between real and AI-generated voices. Most existing detection systems are optimized for English and lack transparency in their predictions.
 
@@ -31,7 +31,7 @@ Offer human-readable explanations for every prediction
 
 Expose the solution through a publicly accessible API
 
-System Architecture
+## System Architecture
 
 High-level pipeline:
 
@@ -46,7 +46,8 @@ Machine learning inference
 Explainability layer
 
 Structured JSON response
-Feature Extraction & Model Logic
+
+## Feature Extraction & Model Logic
 
 The system does not rely on hard-coded rules. Instead, it extracts meaningful acoustic features and uses a trained machine learning model to perform classification.
 
@@ -64,7 +65,7 @@ Temporal consistency
 
 These features help capture differences between natural human speech and synthetic voice generation artifacts.
 
-Explainability Approach
+## Explainability Approach
 
 Explainability is a core design principle of this system.
 
@@ -80,7 +81,7 @@ Lack of natural pauses
 
 This ensures that every prediction is transparent and auditable, which is critical for high-stakes use cases.
 
-Evaluation Metrics
+## Evaluation Metrics
 
 The system is evaluated using:
 
@@ -94,7 +95,7 @@ Consistency on repeated inputs
 
 Language-wise performance is monitored to reduce bias toward any single language.
 
-Limitations
+## Limitations
 
 Performance may degrade on very noisy or extremely short audio samples
 
@@ -104,7 +105,7 @@ Accuracy depends on diversity of training data
 
 These limitations are acknowledged, and the architecture supports continuous improvement through model updates.
 
-Ethical Considerations
+## Ethical Considerations
 
 No personal data is stored
 
@@ -112,7 +113,7 @@ The system is designed strictly for detection and verification
 
 Explainability ensures responsible AI usage
 
-Tech Stack
+## Tech Stack
 
 Backend: FastAPI (Python)
 
@@ -124,7 +125,7 @@ Deployment: Public cloud-hosted API
 
 Authentication: API key-based access
 
-Future Enhancements
+## Future Enhancements
 
 Support for additional languages
 
@@ -134,6 +135,6 @@ Real-time streaming audio detection
 
 Dashboard for analytics and monitoring
 
-Conclusion
+## Conclusion
 
 This API provides a practical, explainable, and scalable solution for detecting AI-generated voices in multilingual environments. By prioritizing transparency and real-world feasibility, the system is well-suited for deployment in domains such as banking, governance, and media verification.
